@@ -1,0 +1,87 @@
+// Place all the styles related to the courses controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+.udemi {
+	.navbar-brand {
+		height: auto;
+		color: #fff;
+		font-size: 36px;
+		&:hover {
+			color: #9d9d9d
+		}
+	}
+	.navbar-right {
+		padding: 15px 0;
+		.btn:first-child {
+			margin-right: 10px;
+		}
+		.btn-danger {
+			margin-right: 10px;
+		}
+		.txt-light {
+			margin-right: 10px;
+		}
+	}
+	nav {
+		h1 {
+			overflow: hidden;
+			margin-top: 5px;
+		}
+	}
+	.centered {
+		text-align: center
+	}
+	.default- {
+		p {
+			margin: 0
+		}
+		.alert {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			p {
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.actions {
+		margin-bottom: 25px;
+	}
+	#error_explanation {
+		background-color: #f2dede;
+    	border-color: #ebccd1;
+    	color: #a94442;
+	    border-radius: 4px;
+	    margin-bottom: 20px;
+	    padding: 15px;
+	    h2 {
+	    	font-size: 18px;
+	    	margin-top: 0
+	    }
+	}
+	.txt-light {
+		color: #fff
+	}
+	.course {
+		border-radius: 5px;
+		padding: 15px;
+		background: #e8e8e8;
+		margin-bottom: 30px;
+		overflow: hidden;
+		h2 {
+			margin-top: 0;
+		}
+		p {
+			max-height: 80px;
+			overflow: hidden;
+		}
+		.btn-success {
+			margin-right: 10px;
+		}
+		.alert-info {
+			margin-bottom: 0;
+		}
+	}
+}
