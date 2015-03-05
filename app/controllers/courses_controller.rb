@@ -54,10 +54,14 @@ class CoursesController < ApplicationController
 	end
 
 	def quit_course 
-		quit = Course.where(subscriptions_params[:course_id]).take
-		quit.destroy
-		flash[:notice] = "Quitter!"
-		redirect_to "/courses"
+		course = Course.find(subscriptions_params[:course_id])
+		user = course.users.find(subscriptions_params[:user_id])
+
+		if user
+	        course.users.delete(user)
+	        flash[:notice] = "Quitter!"
+	        redirect_to "/courses"	
+	    end
 	end
 
 

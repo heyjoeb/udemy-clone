@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   post 'subscriptions', to: 'courses#start_course'
-
+  
+  #no lo logré con delete porque me botaba error de sintaxis en el form...
   post 'quits', to: 'courses#quit_course'
+
+
+  #delete 'subscriptions/:course_id', to: 'courses#quit_course'
 
 
 
